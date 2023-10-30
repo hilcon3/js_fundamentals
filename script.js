@@ -1,8 +1,9 @@
 // variables
-const MAX = 57;
-let actual = MAX - 13;
-let percentage = actual / MAX;
+let str = "Hello";
+let str2 = 'Single quotes are ok too';
+let phrase = `can embed another ${str}`;
 
+alert(phrase);
 
 
 
