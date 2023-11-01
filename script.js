@@ -1,21 +1,19 @@
-// variables
-function add7(n){
-  return n+7;
+let answer = parseInt(prompt("Please enter a number: "));
+
+for(let i = 1; i <= answer; i++){
+  if((i % 3 == 0) && (i % 5 == 0)){
+    console.log("Fizzbuzz");
+  } 
+  else if (i % 3 == 0)
+  {
+    console.log("Fizz");
+  } 
+  else if (i % 5 == 0)
+  {
+    console.log("Buzz");
+  } 
+  else {
+    console.log(i);
+  }
 }
-
-function multiply(x, y){
-  return x*y;
-}
-
-function capitalize(str){
-  s = str.toLowerCase();
-  return s.substring(0,1).toUpperCase() + s.substring(1);
-}
-
-function lastLetter(str){
-  return str.charAt(str.length-1);
-}
-
-console.log(lastLetter("abcd"));
-
 
