@@ -1,31 +1,20 @@
-const container = document.querySelector('#container');
+const link = document.querySelector('a');
 
-const p1 = document.createElement('p');
-p1.textContent = 'Hey I\'m red!';
-p1.style.color = 'red';
-container.appendChild(p1);
+link.textContent = 'Mozilla Developer Network';
+link.href = 'https://developer.mozilla.org';
 
-const heading1 = document.createElement('h3');
-heading1.textContent = 'I\'m a blue h3!';
-heading1.style.color = 'blue';
-container.appendChild(heading1);
+const sect = document.querySelector('section');
 
-const card = document.createElement('div');
-card.style.cssText = 'border: 4pd solid black;background-color: #FFC0CB';
+const para = document.createElement('p');
+para.textContent = 'We hope you enjoyed the ride.';
 
-subheading = document.createElement('h1');
-subheading.textContent = 'I\'m in a div';
-para = document.createElement('p');
-para.textContent = 'Me TOO!';
+sect.appendChild(para);
 
-card.appendChild(subheading);
-card.appendChild(para);
-container.append(card);
+const text = document.createTextNode(
+  '- the premier source for web development knowledge.'
+);
 
-const btn = document.querySelector('#btn');
-btn.onclick = () => alert("Hello World");
+const linkPara = document.querySelector('p');
+linkPara.appendChild(text);
 
-const btn2 = document.querySelector('#btn2');
-btn2.addEventListener('click', () => {
-  alert("Hello World");
-});
+sect.appendChild(linkPara);
