@@ -18,3 +18,4 @@ const linkPara = document.querySelector('p');
 linkPara.appendChild(text);
 
 sect.appendChild(linkPara);
+console.log("hello");
